@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stock Barang - Toko Printing</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Toko Printing — Manajemen Stok</h1>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <h2>Tambah Barang</h2>
+            <div class="input-group">
+                <input type="text" id="itemName" placeholder="Nama Barang">
+                <input type="number" id="itemQty" placeholder="Jumlah" min="1">
+                <button id="addItem">Tambah</button>
+            </div>
+        </section>
+
+        <section class="stock-list">
+            <h2>Daftar Stok Barang</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nama Barang</th>
+                        <th>Jumlah</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+                <tbody id="stockTable"></tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>Toko Keyra Printing</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
